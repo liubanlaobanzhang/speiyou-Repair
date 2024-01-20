@@ -46,8 +46,6 @@
                     };
                     var post = JSON.stringify(data);
                     console.log("请求解析：" + value)
-                    // 请求解析和答案
-                    console.log("POST启动，内容："+post)
 
                     // 方案1：Fetch（返回null，去掉）
                     //fetch("https://app-pub.jiaoyanyun.com/console-pub/v1/search/resource", {method: "POST",headers: {'Content-Type': 'application/json'},body:JSON.stringify(data)})
@@ -63,7 +61,6 @@
                         // var result = document.createElement("div");
                         // 解析返回的结果为JSON对象
                         var json = JSON.parse(this.responseText);
-                        console.log(json)
                         // 获取"data.question.list[0].analysis"的值
                         var answer = json.data.question.list[0].answer[0];
                         var analysis = json.data.question.list[0].analysis[0];
@@ -88,20 +85,21 @@
     };
 
     function button(){
-    // 创建一个 input 元素，作为按钮
-    var input = document.createElement("input");
-    // 设置 input 元素的 type 属性为 "button"
-    input.type = "button";
-    // 设置 input 元素的 value 属性为 "点击我"
-    input.value = "点击此处修复解析";
-    // 获取您想要插入按钮的元素，这里使用了您提供的 CSS 选择器
-    var element223 = document.querySelector("#app > div > div > div > div.print-head > div > div.print-head-left > div.print-version-menu");
-    // 将 input 元素作为子元素添加到您选择的元素中
-    element223.appendChild(input);
-    // 定义一个函数，用于处理按钮的点击事件
-    // 给 input 元素绑定一个函数，这里使用了 addEventListener 方法
-    input.addEventListener("click", doSomething);
+
+        var input = document.createElement("input");
+
+        // 设置 input 元素的 type 属性为 "button"
+        input.type = "button";
+        // 设置 input 元素的 value 属性为 "点击我"
+        input.value = "  点击此处修复解析";
+        // 获取您想要插入按钮的元素，这里使用了您提供的 CSS 选择器
+        var element223 = document.querySelector("#app > div > div > div > div.print-head > div > div.print-head-left > div.print-version-menu");
+        // 将 input 元素作为子元素添加到您选择的元素中
+        element223.appendChild(input);
+        // 定义一个函数，用于处理按钮的点击事件
+        // 给 input 元素绑定一个函数，这里使用了 addEventListener 方法
+        input.addEventListener("click", doSomething);
     }
 
-    setTimeout(button, 3000);
+    setTimeout(button, 500);
 })();
