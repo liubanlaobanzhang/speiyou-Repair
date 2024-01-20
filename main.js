@@ -25,7 +25,7 @@
     function doSomething() {
 
         // 遍历试题找到试题ID并获取解析
-        for (var i = 0; i < 50; i++) {
+        for (var i = 0; i < 80; i++) {
             var element = document.querySelector("#print-body > div:nth-child(" + i + ") > div.print-question.is-default > div > div > div");
             var output = "#print-body > div:nth-child("+i+") > div.print-question.is-default > div > div.talqs > div > div > div > div.talqs_analyze.clearfix > div"
             var outputanswer = "#print-body > div:nth-child("+i+") > div.print-question.is-default > div > div.talqs > div > div > div > div.talqs_answer.clearfix > div"
