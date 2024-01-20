@@ -7,6 +7,8 @@
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @grant        GM_openInTab
+// @downloadURL  https://ghproxy.net/https://raw.githubusercontent.com/liubanlaobanzhang/speiyou-Repair/main/main.js
+// @updateURL    https://ghproxy.net/https://raw.githubusercontent.com/liubanlaobanzhang/speiyou-Repair/main/main.js
 // ==/UserScript==
 
 (function() {
