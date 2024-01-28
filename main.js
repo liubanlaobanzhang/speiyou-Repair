@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         教研云解析修复
 // @namespace    https://greasyfork.org/zh-CN
-// @version      114.514
+// @version      114.514-alpha01
 // @description   教研云解析修复
 // @match        https://ziyuanyetnt.jiaoyanyun.com/
 // @grant        GM_xmlhttpRequest
@@ -48,11 +48,6 @@
                     };
                     var post = JSON.stringify(data);
                     console.log("请求解析：" + value)
-
-                    // 方案1：Fetch（返回null，去掉）
-                    //fetch("https://app-pub.jiaoyanyun.com/console-pub/v1/search/resource", {method: "POST",headers: {'Content-Type': 'application/json'},body:JSON.stringify(data)})
-                    //.then(response => response.json())
-                    //.then(data => console.log(data));
 
                     // 方案2：XHR
                     var xhr = new XMLHttpRequest();
